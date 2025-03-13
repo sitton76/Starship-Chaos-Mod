@@ -96,7 +96,6 @@ function OnPlayUpdate(ev)
         end
         --Resets all values affected by effects to the default values, and reverts the players form based on what stage is being played
         ev.player.camRoll = 0.0
-        ev.player.rot.y = 0.0
         ev.player.baseSpeed = 40
         if Game.sCurrentPlanetId() == PlanetId.PLANET_TITANIA or Game.sCurrentPlanetId == PlanetId.PLANET_MACBETH then
             ev.player.form = PlayerForm.FORM_LANDMASTER
@@ -137,6 +136,7 @@ end
 RegisterListener(Events.DrawLivesCounterHUDEvent, OnDisplayUpdate, EventPriority.NORMAL)
 
 function OnShotFired(ev)
+    --Invert firing
     if current_effect == Effect.INVERT then
         ev.shot.vel.x = -ev.shot.vel.x
         ev.shot.vel.y = -ev.shot.vel.y
