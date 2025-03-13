@@ -1,0 +1,9 @@
+{
+    "name": "Chaos Mod",
+    "version": "1.0",
+    "website": "",
+    "description": "Adds chaos effects to the game.",
+    "author": "sitton76",
+    "license": "MIT",
+    "main": "chaos.lua"
+}
