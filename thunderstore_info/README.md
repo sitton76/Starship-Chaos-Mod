@@ -14,3 +14,12 @@ If you want to add effects to this feel free to open a PR for it!
 ## Known Issues:
 1. DRIFT does not work correctly in all range mode.
 2. INVERT does not work correctly in all range mode.
+3. CHANGE turning you into the Blue Marine may cause lighting issues for the duration of the state.
+4. CHANGE turning you into the Landmaster may make the Aring stuck to the ground after the effects duration in some stages.
+
+## Version Changes:
+'1.2.0': [
+    Prevented CHANGE from turning the player into Blue Marine in All Range mode(prevents a softlock for the duration)
+    Prevented CHANGE from turning the player into Landmaster in space levels(Landmaster would just fall into the void)
+    Prevented FAST from working during boss fights in Non-All Range cases.(The player could outrun the boss)
+]
