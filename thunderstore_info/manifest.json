@@ -1,7 +1,9 @@
 {
-    "name": "Chaos_mod",
-    "version_number": "1.2.0",
-    "website_url": "https://github.com/sitton76/Starship-Chaos-Mod",
+    "name": "Chaos Mod",
+    "version": "1.2.1",
+    "website": "https://github.com/sitton76/Starship-Chaos-Mod",
     "description": "Adds chaos effects to the game.",
-    "dependencies": []
+    "author": "sitton76",
+    "license": "MIT",
+    "main": "chaos.lua"
 }
