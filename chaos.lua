@@ -72,7 +72,6 @@ function OnPlayUpdate(ev)
                 elseif CheckPlanet(Game.sCurrentPlanetId(), landmaster_levels) == true then
                     --Only landmaster works as expected in Landmaster stages, we cancel the effect early.
                     effect_timer = 1
-                elseif 
                 end
             end
 
